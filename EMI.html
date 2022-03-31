@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EMI Calculator</title>
+    <style>
+        .box
+        {
+          background-color:rgb(201, 209, 217);
+            width: 430px;
+            height: 330px;
+            padding: 10px;
+        }
+        
+        h3
+        {
+            margin-right: 15px;
+        }
+        input
+        {
+            margin-left: 25%;
+            margin-bottom: 7%;
+        }
+        #intrestRate
+        {
+            margin-left: 35%;
+        }
+        body
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+       <h1>EMI Calculator</h1>
+       <form  onsubmit=" return myFunction()">
+        <label for="principalAmount">Principal Amount</label>
+        <input type="text" id="principalAmount"><br>
+        <label for="principalAmount">Intrest Rate</label>
+        <input type="text" id="intrestRate"> <br>
+        <label for="principalAmount">Tenure In Months</label>
+        <input type="text" id="tenure"> <br><br>
+        <input type="submit" value="Calculate" id="submit">
+        <input type="reset" value="clear" id="reset">
+        
+        </form>
+        <div id="result"></div>
+        
+        
+    </div>
+    <script src="./EMI.js"></script>
+    
+</body>
+</html>
